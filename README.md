@@ -41,6 +41,8 @@ Run the app: yarn start
 Create an account or log in to start syncing with friends.
 Explore activity-specific playlists and enjoy the shared music experience.
 
+To check linting and formatting, run `yarn fix`.
+
 ### 3. Contribute:
 
 We welcome contributions from the community! If you have ideas for improvement or want to report issues, please check out our Contribution Guidelines.
