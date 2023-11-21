@@ -1,10 +1,18 @@
+import { Text } from '@insync/generic';
+import { Test } from '@insync/models';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-export default function App() {
+const testData: Test = {
+  field: '1',
+  anotherField: '2',
+}
+
+const App = () => {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
+      <Text>{`${testData.field}, ${testData.anotherField}`}</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,3 +26,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
